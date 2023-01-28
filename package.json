@@ -2,8 +2,11 @@
   "name": "@hexlet/code",
   "version": "0.0.1",
   "description": "[![Actions Status](https://github.com/rayveid/fullstack-javascript-project-4/workflows/hexlet-check/badge.svg)](https://github.com/rayveid/fullstack-javascript-project-4/actions)",
-  "main": "src/module.js",
-  "bin": "bin/pageloader.js",
+  "main": ".src/index.js",
+  "type": "module",
+  "bin": {
+    "page-loader": "bin/cli.js"
+  },
   "scripts": {
     "test": "jest"
   },

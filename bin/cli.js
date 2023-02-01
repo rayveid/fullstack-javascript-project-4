@@ -14,6 +14,7 @@ program
     .action((url, options) => {
         const { output } = options; // извлекаем папку вывода из опций
         const result = pageLoader(url,output);
+        console.log(output)
         console.log(result);
     })
     .parse(); // запуск программы

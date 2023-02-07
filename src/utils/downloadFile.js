@@ -14,7 +14,7 @@ const downloadFile = (url, outputDir) => {
         .then(() => axios.get(url, { responseType })) // делаем запрос
         .then((res) => res.data) // получаем данные из запроса
         .then((data) => fs.writeFile(output, data)) // записываем файл
-        .then(() => console.log(output)) // возвращаем путь к файлу
+        .then(() => output) // возвращаем путь к файлу
 }
 
 export default downloadFile;
